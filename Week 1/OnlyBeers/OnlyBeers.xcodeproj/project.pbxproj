@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072342671AFE62FE00971A60 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 072342661AFE62FE00971A60 /* Country.m */; };
+		0767CA1F1AFC9747004733F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767CA1E1AFC9747004733F5 /* main.m */; };
+		0767CA221AFC9747004733F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767CA211AFC9747004733F5 /* AppDelegate.m */; };
+		0767CA251AFC9747004733F5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767CA241AFC9747004733F5 /* MainViewController.m */; };
+		0767CA281AFC9747004733F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0767CA261AFC9747004733F5 /* Main.storyboard */; };
+		0767CA2A1AFC9747004733F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0767CA291AFC9747004733F5 /* Images.xcassets */; };
+		0767CA2D1AFC9747004733F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0767CA2B1AFC9747004733F5 /* LaunchScreen.xib */; };
+		0767CA391AFC9747004733F5 /* OnlyBeersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767CA381AFC9747004733F5 /* OnlyBeersTests.m */; };
+		0767CA451AFC994E004733F5 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767CA441AFC994E004733F5 /* Beer.m */; };
+		0767CA471AFC99E5004733F5 /* Beer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0767CA461AFC99E5004733F5 /* Beer.plist */; };
+		0767CA491AFCB01C004733F5 /* Country.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0767CA481AFCB01C004733F5 /* Country.plist */; };
+		0767CA4F1AFCF021004733F5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767CA4E1AFCF021004733F5 /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0767CA331AFC9747004733F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0767CA111AFC9746004733F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0767CA181AFC9746004733F5;
+			remoteInfo = OnlyBeers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		072342651AFE62FE00971A60 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		072342661AFE62FE00971A60 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		0767CA191AFC9746004733F5 /* OnlyBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlyBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0767CA1D1AFC9747004733F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0767CA1E1AFC9747004733F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0767CA201AFC9747004733F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0767CA211AFC9747004733F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0767CA231AFC9747004733F5 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0767CA241AFC9747004733F5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0767CA271AFC9747004733F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0767CA291AFC9747004733F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0767CA2C1AFC9747004733F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0767CA321AFC9747004733F5 /* OnlyBeersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlyBeersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0767CA371AFC9747004733F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0767CA381AFC9747004733F5 /* OnlyBeersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyBeersTests.m; sourceTree = "<group>"; };
+		0767CA431AFC994E004733F5 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		0767CA441AFC994E004733F5 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		0767CA461AFC99E5004733F5 /* Beer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Beer.plist; sourceTree = "<group>"; };
+		0767CA481AFCB01C004733F5 /* Country.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Country.plist; sourceTree = "<group>"; };
+		0767CA4D1AFCF021004733F5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0767CA4E1AFCF021004733F5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0767CA161AFC9746004733F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0767CA2F1AFC9747004733F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0767CA101AFC9746004733F5 = {
+			isa = PBXGroup;
+			children = (
+				0767CA1B1AFC9746004733F5 /* OnlyBeers */,
+				0767CA351AFC9747004733F5 /* OnlyBeersTests */,
+				0767CA1A1AFC9746004733F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0767CA1A1AFC9746004733F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0767CA191AFC9746004733F5 /* OnlyBeers.app */,
+				0767CA321AFC9747004733F5 /* OnlyBeersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0767CA1B1AFC9746004733F5 /* OnlyBeers */ = {
+			isa = PBXGroup;
+			children = (
+				0767CA421AFC9938004733F5 /* Model */,
+				0767CA231AFC9747004733F5 /* MainViewController.h */,
+				0767CA241AFC9747004733F5 /* MainViewController.m */,
+				0767CA261AFC9747004733F5 /* Main.storyboard */,
+				0767CA291AFC9747004733F5 /* Images.xcassets */,
+				0767CA2B1AFC9747004733F5 /* LaunchScreen.xib */,
+				0767CA1C1AFC9746004733F5 /* Supporting Files */,
+				0767CA461AFC99E5004733F5 /* Beer.plist */,
+				0767CA481AFCB01C004733F5 /* Country.plist */,
+				0767CA4D1AFCF021004733F5 /* DetailViewController.h */,
+				0767CA4E1AFCF021004733F5 /* DetailViewController.m */,
+			);
+			path = OnlyBeers;
+			sourceTree = "<group>";
+		};
+		0767CA1C1AFC9746004733F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0767CA201AFC9747004733F5 /* AppDelegate.h */,
+				0767CA211AFC9747004733F5 /* AppDelegate.m */,
+				0767CA1D1AFC9747004733F5 /* Info.plist */,
+				0767CA1E1AFC9747004733F5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0767CA351AFC9747004733F5 /* OnlyBeersTests */ = {
+			isa = PBXGroup;
+			children = (
+				0767CA381AFC9747004733F5 /* OnlyBeersTests.m */,
+				0767CA361AFC9747004733F5 /* Supporting Files */,
+			);
+			path = OnlyBeersTests;
+			sourceTree = "<group>";
+		};
+		0767CA361AFC9747004733F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0767CA371AFC9747004733F5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0767CA421AFC9938004733F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0767CA431AFC994E004733F5 /* Beer.h */,
+				0767CA441AFC994E004733F5 /* Beer.m */,
+				072342651AFE62FE00971A60 /* Country.h */,
+				072342661AFE62FE00971A60 /* Country.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0767CA181AFC9746004733F5 /* OnlyBeers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0767CA3C1AFC9747004733F5 /* Build configuration list for PBXNativeTarget "OnlyBeers" */;
+			buildPhases = (
+				0767CA151AFC9746004733F5 /* Sources */,
+				0767CA161AFC9746004733F5 /* Frameworks */,
+				0767CA171AFC9746004733F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlyBeers;
+			productName = OnlyBeers;
+			productReference = 0767CA191AFC9746004733F5 /* OnlyBeers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0767CA311AFC9747004733F5 /* OnlyBeersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0767CA3F1AFC9747004733F5 /* Build configuration list for PBXNativeTarget "OnlyBeersTests" */;
+			buildPhases = (
+				0767CA2E1AFC9747004733F5 /* Sources */,
+				0767CA2F1AFC9747004733F5 /* Frameworks */,
+				0767CA301AFC9747004733F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0767CA341AFC9747004733F5 /* PBXTargetDependency */,
+			);
+			name = OnlyBeersTests;
+			productName = OnlyBeersTests;
+			productReference = 0767CA321AFC9747004733F5 /* OnlyBeersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0767CA111AFC9746004733F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Carlos Butron";
+				TargetAttributes = {
+					0767CA181AFC9746004733F5 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					0767CA311AFC9747004733F5 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 0767CA181AFC9746004733F5;
+					};
+				};
+			};
+			buildConfigurationList = 0767CA141AFC9746004733F5 /* Build configuration list for PBXProject "OnlyBeers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0767CA101AFC9746004733F5;
+			productRefGroup = 0767CA1A1AFC9746004733F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0767CA181AFC9746004733F5 /* OnlyBeers */,
+				0767CA311AFC9747004733F5 /* OnlyBeersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0767CA171AFC9746004733F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0767CA281AFC9747004733F5 /* Main.storyboard in Resources */,
+				0767CA2D1AFC9747004733F5 /* LaunchScreen.xib in Resources */,
+				0767CA471AFC99E5004733F5 /* Beer.plist in Resources */,
+				0767CA491AFCB01C004733F5 /* Country.plist in Resources */,
+				0767CA2A1AFC9747004733F5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0767CA301AFC9747004733F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0767CA151AFC9746004733F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0767CA4F1AFCF021004733F5 /* DetailViewController.m in Sources */,
+				0767CA251AFC9747004733F5 /* MainViewController.m in Sources */,
+				0767CA221AFC9747004733F5 /* AppDelegate.m in Sources */,
+				0767CA1F1AFC9747004733F5 /* main.m in Sources */,
+				072342671AFE62FE00971A60 /* Country.m in Sources */,
+				0767CA451AFC994E004733F5 /* Beer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0767CA2E1AFC9747004733F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0767CA391AFC9747004733F5 /* OnlyBeersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0767CA341AFC9747004733F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0767CA181AFC9746004733F5 /* OnlyBeers */;
+			targetProxy = 0767CA331AFC9747004733F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0767CA261AFC9747004733F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0767CA271AFC9747004733F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0767CA2B1AFC9747004733F5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0767CA2C1AFC9747004733F5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0767CA3A1AFC9747004733F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0767CA3B1AFC9747004733F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0767CA3D1AFC9747004733F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OnlyBeers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0767CA3E1AFC9747004733F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OnlyBeers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0767CA401AFC9747004733F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OnlyBeersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlyBeers.app/OnlyBeers";
+			};
+			name = Debug;
+		};
+		0767CA411AFC9747004733F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OnlyBeersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlyBeers.app/OnlyBeers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0767CA141AFC9746004733F5 /* Build configuration list for PBXProject "OnlyBeers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0767CA3A1AFC9747004733F5 /* Debug */,
+				0767CA3B1AFC9747004733F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0767CA3C1AFC9747004733F5 /* Build configuration list for PBXNativeTarget "OnlyBeers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0767CA3D1AFC9747004733F5 /* Debug */,
+				0767CA3E1AFC9747004733F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0767CA3F1AFC9747004733F5 /* Build configuration list for PBXNativeTarget "OnlyBeersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0767CA401AFC9747004733F5 /* Debug */,
+				0767CA411AFC9747004733F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0767CA111AFC9746004733F5 /* Project object */;
+}
