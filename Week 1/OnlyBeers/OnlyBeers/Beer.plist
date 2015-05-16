@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Sagres</string>
+		<key>country</key>
+		<integer>1</integer>
+		<key>image</key>
+		<string>sagres.png</string>
+		<key>alcohol</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Petrus</string>
+		<key>country</key>
+		<integer>4</integer>
+		<key>image</key>
+		<string>petrusdubbelbruin.png</string>
+		<key>alcohol</key>
+		<integer>8</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Erdinger</string>
+		<key>country</key>
+		<integer>3</integer>
+		<key>image</key>
+		<string>erdinger.png</string>
+		<key>alcohol</key>
+		<integer>7</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Alhambra</string>
+		<key>country</key>
+		<integer>0</integer>
+		<key>image</key>
+		<string>alhambra.png</string>
+		<key>alcohol</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mythos</string>
+		<key>country</key>
+		<integer>2</integer>
+		<key>image</key>
+		<string>mythos.png</string>
+		<key>alcohol</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Estrella</string>
+		<key>country</key>
+		<integer>0</integer>
+		<key>image</key>
+		<string>estrella.png</string>
+		<key>alcohol</key>
+		<integer>5</integer>
+	</dict>
+</array>
+</plist>
