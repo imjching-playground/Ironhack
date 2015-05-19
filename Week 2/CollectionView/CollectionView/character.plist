@@ -11,6 +11,42 @@
 		<array>
 			<dict>
 				<key>name</key>
+				<string>Vader</string>
+				<key>imageName</key>
+				<string>vader.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vader</string>
+				<key>imageName</key>
+				<string>vader.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vader</string>
+				<key>imageName</key>
+				<string>vader.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vader</string>
+				<key>imageName</key>
+				<string>vader.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vader</string>
+				<key>imageName</key>
+				<string>vader.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vader</string>
+				<key>imageName</key>
+				<string>vader.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>C3po</string>
 				<key>imageName</key>
 				<string>c3po.png</string>

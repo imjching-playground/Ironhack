@@ -20,4 +20,6 @@
 //save plist data
 - (NSDictionary *)toDictionary;
 
+//+ (NSArray *)
+
 @end

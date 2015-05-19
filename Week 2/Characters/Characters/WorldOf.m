@@ -92,30 +92,39 @@
 
 
 
+//- (NSDictionary *)toDictionary {
+//    
+//    
+//    //CREATE NEW LIST OF CHARACTERS
+//    NSMutableArray * characters = [NSMutableArray array];
+//    
+//    //GRAB EACH CHARACTER MODEL
+//    for (Character *character in self.characters) {
+//        
+//        //GET DICTIONARY FOR EACH MODEL
+//        NSDictionary * characterDictionary = [character toDictionary];
+//        
+//        //ADD THE DICTIONARY TO THE LIST
+//        [characters addObject:characterDictionary];
+//        
+//    }
+//    
+//    //HERE characters CONTAINS ALL CHARACTERS IN FORM
+//    //OF DICTIONARY
+//    return @{
+//             @"name": self.name,
+//             @"imageName": self.imageName,
+//             @"characters": characters
+//             };
+//    
+//}
+
 - (NSDictionary *)toDictionary {
     
-    
-    //CREATE NEW LIST OF CHARACTERS
-    NSMutableArray * characters = [NSMutableArray array];
-    
-    //GRAB EACH CHARACTER MODEL
-    for (Character *character in self.characters) {
-        
-        //GET DICTIONARY FOR EACH MODEL
-        NSDictionary * characterDictionary = [character toDictionary];
-        
-        //ADD THE DICTIONARY TO THE LIST
-        [characters addObject:characterDictionary];
-        
-    }
-    
-    //HERE characters CONTAINS ALL CHARACTERS IN FORM
-    //OF DICTIONARY
     return @{
-             @"name": self.name,
-             @"imageName": self.imageName,
-             @"characters": characters
-             };
+                          @"name": self.name,
+                          @"imageName": self.imageName,
+                          };
     
 }
 
