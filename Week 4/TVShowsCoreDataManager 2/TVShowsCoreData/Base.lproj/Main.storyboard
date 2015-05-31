@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FfD-bl-7Fe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title to create" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ix3-0W-peH">
+                                <rect key="frame" x="16" y="28" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="Dmu-df-ohz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title to find" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwt-E7-a8v">
+                                <rect key="frame" x="16" y="166" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="jUA-Li-BZ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdM-hU-1zQ">
+                                <rect key="frame" x="16" y="102" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K52-3e-cgy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVU-Dh-8vG">
+                                <rect key="frame" x="16" y="204" width="30" height="30"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionFind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wX1-bK-bdD"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drv-XE-sZ9">
+                                <rect key="frame" x="16" y="255" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seasons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJ0-kN-QY1">
+                                <rect key="frame" x="16" y="291" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Seasons" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgc-TG-FXc">
+                                <rect key="frame" x="16" y="66" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="eG0-AP-Umq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Drv-XE-sZ9" firstAttribute="leading" secondItem="GVU-Dh-8vG" secondAttribute="leading" id="0bg-hK-j2K"/>
+                            <constraint firstItem="wwt-E7-a8v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3E9-7z-jk5"/>
+                            <constraint firstItem="GVU-Dh-8vG" firstAttribute="top" secondItem="wwt-E7-a8v" secondAttribute="bottom" constant="8" symbolic="YES" id="3nQ-yA-tIO"/>
+                            <constraint firstItem="wwt-E7-a8v" firstAttribute="leading" secondItem="JdM-hU-1zQ" secondAttribute="leading" id="72x-kL-L5N"/>
+                            <constraint firstItem="Drv-XE-sZ9" firstAttribute="top" secondItem="GVU-Dh-8vG" secondAttribute="bottom" constant="21" id="EBe-a3-KS5"/>
+                            <constraint firstItem="ix3-0W-peH" firstAttribute="leading" secondItem="JdM-hU-1zQ" secondAttribute="leading" id="GSX-Mw-WDp"/>
+                            <constraint firstItem="vgc-TG-FXc" firstAttribute="top" secondItem="ix3-0W-peH" secondAttribute="bottom" constant="8" symbolic="YES" id="MtQ-lT-Gsq"/>
+                            <constraint firstItem="wwt-E7-a8v" firstAttribute="top" secondItem="JdM-hU-1zQ" secondAttribute="bottom" constant="34" id="ScV-ij-iP9"/>
+                            <constraint firstItem="JdM-hU-1zQ" firstAttribute="top" secondItem="ix3-0W-peH" secondAttribute="bottom" constant="44" id="ZIa-sA-tNY"/>
+                            <constraint firstItem="XJ0-kN-QY1" firstAttribute="top" secondItem="Drv-XE-sZ9" secondAttribute="bottom" constant="15" id="doL-xH-nUZ"/>
+                            <constraint firstItem="wwt-E7-a8v" firstAttribute="leading" secondItem="GVU-Dh-8vG" secondAttribute="leading" id="lQK-ne-GnS"/>
+                            <constraint firstItem="ix3-0W-peH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ljh-y8-9WR"/>
+                            <constraint firstItem="vgc-TG-FXc" firstAttribute="leading" secondItem="JdM-hU-1zQ" secondAttribute="leading" id="lxq-w2-lGq"/>
+                            <constraint firstItem="Drv-XE-sZ9" firstAttribute="leading" secondItem="XJ0-kN-QY1" secondAttribute="leading" id="ptE-dE-g1a"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="qeh-QI-ZwE"/>
+                    <connections>
+                        <outlet property="findField" destination="wwt-E7-a8v" id="PdH-cA-BOI"/>
+                        <outlet property="foundSeasons" destination="XJ0-kN-QY1" id="UrJ-Ey-6Xi"/>
+                        <outlet property="foundTitle" destination="Drv-XE-sZ9" id="nJL-Jx-hgK"/>
+                        <outlet property="seasonsField" destination="vgc-TG-FXc" id="oVd-l1-BrD"/>
+                        <outlet property="titleField" destination="ix3-0W-peH" id="xH3-oE-0Rc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="321"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="6gt-mB-QF4">
+            <objects>
+                <tableViewController id="JLs-xr-Hxw" customClass="AllShowsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pQu-J7-bs5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" id="2aG-Jh-PaF">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2aG-Jh-PaF" id="51i-lR-4sV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="mSi-Yv-s9i" kind="show" id="w9S-sW-uUj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JLs-xr-Hxw" id="EOS-HA-oTG"/>
+                            <outlet property="delegate" destination="JLs-xr-Hxw" id="KSX-JH-tyN"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="2Ds-2V-o43"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZZ-nK-Pl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="1059"/>
+        </scene>
+        <!--Show Edit View Controller-->
+        <scene sceneID="sJI-v8-FsE">
+            <objects>
+                <viewController id="mSi-Yv-s9i" customClass="ShowEditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ra-qQ-xHa"/>
+                        <viewControllerLayoutGuide type="bottom" id="V9C-C1-gbM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OEe-ad-PAR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Show title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVB-R5-XMH">
+                                <rect key="frame" x="16" y="20" width="238" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-Yq-RPf">
+                                <rect key="frame" x="16" y="110" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSave:" destination="mSi-Yv-s9i" eventType="touchUpInside" id="5aO-S7-APD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG3-jz-uKn">
+                                <rect key="frame" x="16" y="183" width="44" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionDelete:" destination="mSi-Yv-s9i" eventType="touchUpInside" id="qBj-3d-OXH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seasons" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJe-eV-mNu">
+                                <rect key="frame" x="16" y="58" width="238" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="showSeasonsField" destination="gJe-eV-mNu" id="JUw-Fa-Ncu"/>
+                        <outlet property="showTitleField" destination="AVB-R5-XMH" id="URg-IK-164"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oH-Bd-IsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731" y="1059"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="v2c-4E-n6M">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FfD-bl-7Fe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="g9W-B7-fur">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uYN-WB-CvO"/>
+                        <segue destination="JLs-xr-Hxw" kind="relationship" relationship="viewControllers" id="xFd-lC-S9B"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fea-gd-lzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="321"/>
+        </scene>
+    </scenes>
+</document>
