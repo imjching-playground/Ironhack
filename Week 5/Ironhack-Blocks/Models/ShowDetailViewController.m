@@ -13,6 +13,8 @@
 
 #import "Show.h"
 
+#import <extobjc.h>
+
 @interface ShowDetailViewController ()
 
 @property (nonatomic, weak) Show *show;

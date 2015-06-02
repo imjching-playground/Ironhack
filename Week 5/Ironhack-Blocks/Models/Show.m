@@ -27,7 +27,8 @@
     return @{
              @"showDescription": @"description",
              @"showTitle": @"title",
-             @"showId":@"id"
+             @"showId":@"id",
+             @"posterURL":@"posterURL"
              };
 }
 

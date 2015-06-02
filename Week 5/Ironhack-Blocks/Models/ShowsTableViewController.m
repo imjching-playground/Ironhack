@@ -13,11 +13,13 @@
 
 #import "Show.h"
 #import "NSString+Random.h"
+#import "ShowsProvider.h"
 #import <Mantle/Mantle.h>
 
 static NSString * const savedShowsFileName=@"shows";
 
 @interface ShowsTableViewController ()
+@property (strong,nonatomic) ShowsProvider *showsProvider;
 @property (strong,nonatomic) NSMutableArray *shows;
 @end
 
@@ -28,29 +30,20 @@ static NSString * const savedShowsFileName=@"shows";
     if(self){
         self.title=@"Shows";
         _shows = [NSMutableArray array];
-        [self loadShowsFromRemote];
+        _showsProvider=[[ShowsProvider alloc] init];
         
     }
     return self;
 }
 - (void)loadShowsFromRemote{
-    NSDictionary *JSONDictionary = [self showsJSONDictionaryFromRemote];
-    for (NSDictionary *tvshowDictionary in [JSONDictionary valueForKey:@"shows"]) {
-        NSError *parseError;
-        Show *showItem = [MTLJSONAdapter modelOfClass:[Show class] fromJSONDictionary:tvshowDictionary error:&parseError];
-        if (parseError) {
-            NSLog(@"%@",parseError);
-        }
-        [self.shows addObject:showItem];
-    }
+    [self.showsProvider showsWithSuccessBlock:^(id data) {
+        self.shows = data;
+        [self.tableView reloadData];
+    } errorBlock:^(NSError *error) {
+        
+    }];
 }
-- (NSDictionary *)showsJSONDictionaryFromRemote{
-    NSURL *jsonURL = [NSURL URLWithString:@"http://ironhack4thweek.s3.amazonaws.com/shows.json"];
-    NSData *seriesData = [NSData dataWithContentsOfURL:jsonURL];
-    NSError *error;
-    NSDictionary *JSONDictionary = [NSJSONSerialization JSONObjectWithData:seriesData options:NSJSONReadingMutableContainers error:&error];
-    return JSONDictionary;
-}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -64,7 +57,9 @@ static NSString * const savedShowsFileName=@"shows";
     self.navigationItem.rightBarButtonItem = [[BlockButtonItem alloc] initWithTitle:@"Add" block:^{
         [self.shows addObject:[self randomShow]];
         [self.tableView reloadData];
-    }];;
+    }];
+    
+    [self loadShowsFromRemote];
 }
 
 - (void)addShow:(id)sender{
@@ -90,13 +85,6 @@ static NSString * const savedShowsFileName=@"shows";
 - (void)saveShows:(id)sender{
     if (self.shows.count) {
         [NSKeyedArchiver archiveRootObject:self.shows toFile:[self archivePath]];
-    }
-}
-
-- (void)loadShows{
-    NSArray *shows=[NSKeyedUnarchiver unarchiveObjectWithFile:[self archivePath]];
-    if (shows.count) {
-        self.shows=[shows mutableCopy];
     }
 }
 
