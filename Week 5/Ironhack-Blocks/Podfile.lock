@@ -1,0 +1,12 @@
+PODS:
+  - Mantle (HEAD based on 1.5):
+    - Mantle/extobjc
+  - Mantle/extobjc (HEAD based on 1.5)
+
+DEPENDENCIES:
+  - Mantle (HEAD)
+
+SPEC CHECKSUMS:
+  Mantle: 60c03eea4d15a1c8d53821a56c7492cd6d05f553
+
+COCOAPODS: 0.32.1
