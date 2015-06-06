@@ -11,10 +11,9 @@
 #import "BlockButtonItem.h"
 #import "ShowDetailViewController.h"
 
-#import "Show.h"
 #import "NSString+Random.h"
+#import "Show.h"
 #import "ShowsProvider.h"
-#import <Mantle/Mantle.h>
 
 static NSString * const savedShowsFileName=@"shows";
 
