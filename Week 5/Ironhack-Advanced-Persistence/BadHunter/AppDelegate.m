@@ -111,19 +111,11 @@
     }
     _managedObjectContext = [[NSManagedObjectContext alloc] init];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
-    
-    
-    NSUndoManager *undoManager = [[NSUndoManager alloc] init];
-    undoManager.levelsOfUndo = 10;
-    undoManager.groupsByEvent = NO;
-    
-    [_managedObjectContext setUndoManager:undoManager];
+    _managedObjectContext.undoManager = [[NSUndoManager alloc] init];
+    _managedObjectContext.undoManager.groupsByEvent = NO;
+    _managedObjectContext.undoManager.levelsOfUndo = 10;
     
     return _managedObjectContext;
-    
-    
-
-    
 }
 
 #pragma mark - Core Data Saving support
@@ -140,8 +132,5 @@
         }
     }
 }
-
-
-
 
 @end

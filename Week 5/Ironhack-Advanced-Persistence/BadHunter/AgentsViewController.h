@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#import "AgentEditViewControllerDelegate.h"
 #import <CoreData/CoreData.h>
 
-@interface AgentsViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface AgentsViewController : UITableViewController <NSFetchedResultsControllerDelegate, AgentEditViewControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

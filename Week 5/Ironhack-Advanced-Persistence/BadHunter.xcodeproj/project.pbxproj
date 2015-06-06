@@ -16,6 +16,13 @@
 		8CA9DB541B1E5813006BC92E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA9DB531B1E5813006BC92E /* Images.xcassets */; };
 		8CA9DB571B1E5813006BC92E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA9DB551B1E5813006BC92E /* LaunchScreen.xib */; };
 		8CA9DB631B1E5813006BC92E /* BadHunterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9DB621B1E5813006BC92E /* BadHunterTests.m */; };
+		8CDD59C31B1F83B00013E8BD /* Agent+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD59C21B1F83B00013E8BD /* Agent+Model.m */; };
+		8CDD59C91B1F9A060013E8BD /* ImageMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD59C81B1F9A060013E8BD /* ImageMapper.m */; };
+		8CDD59CF1B1FA6210013E8BD /* FreakType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD59CE1B1FA6210013E8BD /* FreakType.m */; };
+		8CDD59D21B1FA6220013E8BD /* Domain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD59D11B1FA6220013E8BD /* Domain.m */; };
+		8CDD59D51B1FA6220013E8BD /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD59D41B1FA6220013E8BD /* Agent.m */; };
+		8CDD59D81B1FADC50013E8BD /* Domain+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD59D71B1FADC50013E8BD /* Domain+Model.m */; };
+		8CDD59DB1B1FAF9F0013E8BD /* FreakType+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD59DA1B1FAF9F0013E8BD /* FreakType+Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		076DF1021B1F074900777D07 /* DismissProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissProtocol.h; sourceTree = "<group>"; };
 		8CA9DB3D1B1E5813006BC92E /* BadHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA9DB411B1E5813006BC92E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA9DB421B1E5813006BC92E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +52,21 @@
 		8CA9DB5C1B1E5813006BC92E /* BadHunterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadHunterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA9DB611B1E5813006BC92E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA9DB621B1E5813006BC92E /* BadHunterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadHunterTests.m; sourceTree = "<group>"; };
+		8CA9DB6C1B1E659A006BC92E /* AgentEditViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgentEditViewControllerDelegate.h; sourceTree = "<group>"; };
+		8CDD59C11B1F83B00013E8BD /* Agent+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Agent+Model.h"; sourceTree = "<group>"; };
+		8CDD59C21B1F83B00013E8BD /* Agent+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Agent+Model.m"; sourceTree = "<group>"; };
+		8CDD59C71B1F9A060013E8BD /* ImageMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageMapper.h; sourceTree = "<group>"; };
+		8CDD59C81B1F9A060013E8BD /* ImageMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMapper.m; sourceTree = "<group>"; };
+		8CDD59CD1B1FA6210013E8BD /* FreakType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreakType.h; sourceTree = "<group>"; };
+		8CDD59CE1B1FA6210013E8BD /* FreakType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreakType.m; sourceTree = "<group>"; };
+		8CDD59D01B1FA6220013E8BD /* Domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		8CDD59D11B1FA6220013E8BD /* Domain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Domain.m; sourceTree = "<group>"; };
+		8CDD59D31B1FA6220013E8BD /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
+		8CDD59D41B1FA6220013E8BD /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
+		8CDD59D61B1FADC50013E8BD /* Domain+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Domain+Model.h"; sourceTree = "<group>"; };
+		8CDD59D71B1FADC50013E8BD /* Domain+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Domain+Model.m"; sourceTree = "<group>"; };
+		8CDD59D91B1FAF9F0013E8BD /* FreakType+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FreakType+Model.h"; sourceTree = "<group>"; };
+		8CDD59DA1B1FAF9F0013E8BD /* FreakType+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FreakType+Model.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,18 +108,32 @@
 		8CA9DB3F1B1E5813006BC92E /* BadHunter */ = {
 			isa = PBXGroup;
 			children = (
-				8CA9DB441B1E5813006BC92E /* AppDelegate.h */,
-				8CA9DB451B1E5813006BC92E /* AppDelegate.m */,
-				8CA9DB4A1B1E5813006BC92E /* AgentsViewController.h */,
-				8CA9DB4B1B1E5813006BC92E /* AgentsViewController.m */,
+				8CDD59D31B1FA6220013E8BD /* Agent.h */,
+				8CDD59D41B1FA6220013E8BD /* Agent.m */,
+				8CDD59C11B1F83B00013E8BD /* Agent+Model.h */,
+				8CDD59C21B1F83B00013E8BD /* Agent+Model.m */,
 				8CA9DB4D1B1E5813006BC92E /* AgentEditViewController.h */,
 				8CA9DB4E1B1E5813006BC92E /* AgentEditViewController.m */,
-				8CA9DB501B1E5813006BC92E /* Main.storyboard */,
+				8CA9DB6C1B1E659A006BC92E /* AgentEditViewControllerDelegate.h */,
+				8CA9DB4A1B1E5813006BC92E /* AgentsViewController.h */,
+				8CA9DB4B1B1E5813006BC92E /* AgentsViewController.m */,
+				8CA9DB441B1E5813006BC92E /* AppDelegate.h */,
+				8CA9DB451B1E5813006BC92E /* AppDelegate.m */,
+				8CA9DB471B1E5813006BC92E /* BadHunter.xcdatamodeld */,
+				8CDD59D01B1FA6220013E8BD /* Domain.h */,
+				8CDD59D11B1FA6220013E8BD /* Domain.m */,
+				8CDD59D61B1FADC50013E8BD /* Domain+Model.h */,
+				8CDD59D71B1FADC50013E8BD /* Domain+Model.m */,
+				8CDD59CD1B1FA6210013E8BD /* FreakType.h */,
+				8CDD59CE1B1FA6210013E8BD /* FreakType.m */,
+				8CDD59D91B1FAF9F0013E8BD /* FreakType+Model.h */,
+				8CDD59DA1B1FAF9F0013E8BD /* FreakType+Model.m */,
+				8CDD59C71B1F9A060013E8BD /* ImageMapper.h */,
+				8CDD59C81B1F9A060013E8BD /* ImageMapper.m */,
 				8CA9DB531B1E5813006BC92E /* Images.xcassets */,
 				8CA9DB551B1E5813006BC92E /* LaunchScreen.xib */,
-				8CA9DB471B1E5813006BC92E /* BadHunter.xcdatamodeld */,
+				8CA9DB501B1E5813006BC92E /* Main.storyboard */,
 				8CA9DB401B1E5813006BC92E /* Supporting Files */,
-				076DF1021B1F074900777D07 /* DismissProtocol.h */,
 			);
 			path = BadHunter;
 			sourceTree = "<group>";
@@ -229,8 +264,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDD59CF1B1FA6210013E8BD /* FreakType.m in Sources */,
+				8CDD59D21B1FA6220013E8BD /* Domain.m in Sources */,
+				8CDD59C91B1F9A060013E8BD /* ImageMapper.m in Sources */,
+				8CDD59DB1B1FAF9F0013E8BD /* FreakType+Model.m in Sources */,
+				8CDD59D51B1FA6220013E8BD /* Agent.m in Sources */,
 				8CA9DB4F1B1E5813006BC92E /* AgentEditViewController.m in Sources */,
+				8CDD59D81B1FADC50013E8BD /* Domain+Model.m in Sources */,
 				8CA9DB4C1B1E5813006BC92E /* AgentsViewController.m in Sources */,
+				8CDD59C31B1F83B00013E8BD /* Agent+Model.m in Sources */,
 				8CA9DB461B1E5813006BC92E /* AppDelegate.m in Sources */,
 				8CA9DB431B1E5813006BC92E /* main.m in Sources */,
 				8CA9DB491B1E5813006BC92E /* BadHunter.xcdatamodeld in Sources */,

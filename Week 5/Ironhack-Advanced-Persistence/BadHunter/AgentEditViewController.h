@@ -7,23 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DismissProtocol.h"
-#import <CoreData/CoreData.h>
 
+#import "AgentEditViewControllerDelegate.h"
 
-@interface AgentEditViewController : UIViewController
+@class Agent;
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@interface AgentEditViewController : UIViewController <UITextFieldDelegate, UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (strong, nonatomic) id agent;
-
-// Delegate to respond back
-@property (weak, nonatomic) id <DismissProtocolDelegate>delegate;
-
-
-
-
+@property (strong, nonatomic) Agent *agent;
+@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) id<AgentEditViewControllerDelegate> delegate;
 
 @end
 

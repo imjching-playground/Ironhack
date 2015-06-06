@@ -7,58 +7,67 @@
 //
 
 #import "AgentsViewController.h"
+
+#import "Agent+Model.h"
+#import "Domain+Model.h"
 #import "AgentEditViewController.h"
-@interface AgentsViewController () <DismissProtocolDelegate>
+
+static NSString *const segueCreateAgent = @"CreateAgent";
+static NSString *const segueEditAgent = @"EditAgent";
+
+@interface AgentsViewController ()
 
 @end
 
 @implementation AgentsViewController
 
-#define SEGUE @"CreateAgent"
-
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    
+    [self displayControlledDomainsInTitle];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Display information
+
+- (void) displayControlledDomainsInTitle {
+    NSError *error;
+    NSUInteger controlledDomains = [self.managedObjectContext countForFetchRequest:[Domain fetchForControlledDomains]
+                                                                             error:&error];
+    self.title = [NSString stringWithFormat:@"Controlled domains: %lu", (unsigned long)controlledDomains];
 }
-
-
 
 #pragma mark - Segues
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    [[self.managedObjectContext undoManager] beginUndoGrouping];
-
-    if ([[segue identifier] isEqualToString:SEGUE]) {
-        
-        
-        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-        
-        
-        NSManagedObject *agent = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-        
-        
-        AgentEditViewController *detailVC = (AgentEditViewController *)[[segue destinationViewController] topViewController];
-        
-        detailVC.agent = agent;
-        
-        detailVC.delegate = self;
-        
-
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:segueCreateAgent])
+    {
+        AgentEditViewController *agentEditVC = (AgentEditViewController *)[[segue destinationViewController] topViewController];
+        [self prepareAgentEditViewController:agentEditVC withAgent:nil];
     }
+    else if ([[segue identifier] isEqualToString:segueEditAgent])
+    {
+        AgentEditViewController *agentEditVC = (AgentEditViewController *)[[segue destinationViewController] topViewController];
+        Agent *agent = [self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
+        [self prepareAgentEditViewController:agentEditVC withAgent:agent];
+    }
+}
+
+- (void) prepareAgentEditViewController:(AgentEditViewController *)agentEditVC
+                              withAgent:(Agent *)agent {
+    [self.managedObjectContext.undoManager beginUndoGrouping];
+
+    if (agent == nil) {
+        [self.managedObjectContext.undoManager setActionName:@"new agent"];
+        NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
+        agent = [NSEntityDescription insertNewObjectForEntityForName:[entity name]
+                                              inManagedObjectContext:self.managedObjectContext];
+    } else {
+        [self.managedObjectContext.undoManager setActionName:@"edit agent"];
+    }
+    
+    agentEditVC.agent = agent;
+    agentEditVC.delegate = self;
 }
 
 #pragma mark - Table View
@@ -98,49 +107,46 @@
     }
 }
 
+- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSString *categoryName = [[self.fetchedResultsController sections][section] name];
+    NSNumber *dpAvg = [[[[self.fetchedResultsController sections] objectAtIndex:section] objects] valueForKeyPath:@"@avg.destructionPower"];
+    return [NSString stringWithFormat:@"%@ (%@)", categoryName, dpAvg];
+}
+
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"name"] description];
+    Agent *agent = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = agent.name;
 }
 
 #pragma mark - Fetched results controller
 
-- (NSFetchedResultsController *)fetchedResultsController
-{
-    if (_fetchedResultsController != nil) {
-        return _fetchedResultsController;
+- (NSFetchedResultsController *) fetchedResultsController {
+    if (_fetchedResultsController == nil) {
+        static NSString *const sectionName = @"category.name";
+        [NSFetchedResultsController deleteCacheWithName:@"Agents"];
+        // Edit the section name key path and cache name if appropriate.
+        // nil for section name key path means "no sections".
+        NSSortDescriptor *categorySortDescriptor = [NSSortDescriptor sortDescriptorWithKey:sectionName ascending:YES];
+        NSSortDescriptor *dpSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:agentPropertyDestructionPower ascending:YES];
+        NSSortDescriptor *nameSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:agentPropertyName ascending:YES];
+
+        _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:[Agent 
+fetchForAllAgentsWithSortDescriptors:@[categorySortDescriptor, dpSortDescriptor, nameSortDescriptor]]
+                                                                        managedObjectContext:self.managedObjectContext
+                                                                          sectionNameKeyPath:sectionName cacheName:@"Agents"];
+        _fetchedResultsController.delegate = self;
+        
+        NSError *error = nil;
+        if (![_fetchedResultsController performFetch:&error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
     }
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Agent" inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:20];
-    
-    // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
-    NSArray *sortDescriptors = @[sortDescriptor];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // Edit the section name key path and cache name if appropriate.
-    // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
-    aFetchedResultsController.delegate = self;
-    self.fetchedResultsController = aFetchedResultsController;
-    
-	NSError *error = nil;
-	if (![self.fetchedResultsController performFetch:&error]) {
-	     // Replace this implementation with code to handle the error appropriately.
-	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-	    abort();
-	}
-    
     return _fetchedResultsController;
-}    
+}
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
 {
@@ -180,7 +186,6 @@
             break;
             
         case NSFetchedResultsChangeUpdate:
-            //[self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
             
@@ -194,30 +199,31 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
+    [self displayControlledDomainsInTitle];
 }
 
+#pragma mark - Agent edit view controller delegate
 
-
-#pragma mark - Sample protocol delegate
--(void)processDismiss:(BOOL)modifiedData{
-    
-    [[self.managedObjectContext undoManager] endUndoGrouping];
-    
-    NSError *error;
-
-    if (modifiedData == NO) {
-        
-        [self dismissViewControllerAnimated:YES completion:nil];
-        
-        [[self.managedObjectContext undoManager] undo];
-        
+- (void)dismissAgentEditViewController:(id)agentEditVC modifiedData:(BOOL)modifiedData {
+    [self.managedObjectContext.undoManager setActionName:@"new agent"];
+    [self.managedObjectContext.undoManager endUndoGrouping];
+    if (modifiedData) {
+        [self saveContext];
     } else {
-        [self dismissViewControllerAnimated:YES completion:nil];
-        [self.managedObjectContext save:&error];
+        [self.managedObjectContext.undoManager undo];
     }
-
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
+- (void) saveContext {
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@"Couldn't save data: %@, %@", error, [error userInfo]);
+        abort();
+    }
+}   
 
 @end
