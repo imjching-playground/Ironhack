@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>SuperTrooper Bar</string>
+		<key>latitude</key>
+		<real>41.392606</real>
+		<key>longitude</key>
+		<real>2.174898</real>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Really sexy Bar</string>
+		<key>latitude</key>
+		<real>41.389743</real>
+		<key>longitude</key>
+		<real>2.174678</real>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The crazy people&apos;s Bar</string>
+		<key>latitude</key>
+		<real>41.393185</real>
+		<key>longitude</key>
+		<real>2.178004</real>
+		<key>type</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Boring Bar</string>
+		<key>latitude</key>
+		<real>41.38933</real>
+		<key>longitude</key>
+		<real>2.173583</real>
+		<key>type</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Free Bar</string>
+		<key>latitude</key>
+		<real>41.390612</real>
+		<key>longitude</key>
+		<real>2.174603</real>
+		<key>type</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Only Drunks Bar</string>
+		<key>latitude</key>
+		<real>41.391069</real>
+		<key>longitude</key>
+		<real>2.17172</real>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+</array>
+</plist>

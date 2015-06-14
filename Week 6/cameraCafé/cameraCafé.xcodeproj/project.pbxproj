@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18205D941AB0361F00EE3286 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18205D931AB0361F00EE3286 /* main.m */; };
+		18205D971AB0361F00EE3286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18205D961AB0361F00EE3286 /* AppDelegate.m */; };
+		18205D9A1AB0361F00EE3286 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18205D991AB0361F00EE3286 /* ViewController.m */; };
+		18205D9D1AB0361F00EE3286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18205D9B1AB0361F00EE3286 /* Main.storyboard */; };
+		18205D9F1AB0361F00EE3286 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18205D9E1AB0361F00EE3286 /* Images.xcassets */; };
+		18205DA21AB0361F00EE3286 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18205DA01AB0361F00EE3286 /* LaunchScreen.xib */; };
+		18205DAE1AB0361F00EE3286 /* cameraCafe_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18205DAD1AB0361F00EE3286 /* cameraCafe_Tests.m */; };
+		18205DB91AB044F900EE3286 /* DeviceHardwareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18205DB81AB044F900EE3286 /* DeviceHardwareHelper.m */; };
+		18205DBC1AB0536000EE3286 /* SoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18205DBB1AB0536000EE3286 /* SoundHelper.m */; };
+		18205DC11AB0599600EE3286 /* Ioputarl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18205DBE1AB0599600EE3286 /* Ioputarl.wav */; };
+		18205DC21AB0599600EE3286 /* Muelas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18205DBF1AB0599600EE3286 /* Muelas.wav */; };
+		18205DC31AB0599600EE3286 /* Norl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18205DC01AB0599600EE3286 /* Norl.wav */; };
+		189E79C51AB0973300BF4AA5 /* Doctor Soos Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189E79C41AB096F000BF4AA5 /* Doctor Soos Bold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18205DA81AB0361F00EE3286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18205D861AB0361F00EE3286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18205D8D1AB0361F00EE3286;
+			remoteInfo = "cameraCafé";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18205D8E1AB0361F00EE3286 /* cameraCafé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cameraCafé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18205D921AB0361F00EE3286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18205D931AB0361F00EE3286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18205D951AB0361F00EE3286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18205D961AB0361F00EE3286 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18205D981AB0361F00EE3286 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18205D991AB0361F00EE3286 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18205D9C1AB0361F00EE3286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18205D9E1AB0361F00EE3286 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18205DA11AB0361F00EE3286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18205DA71AB0361F00EE3286 /* cameraCaféTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cameraCaféTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18205DAC1AB0361F00EE3286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18205DAD1AB0361F00EE3286 /* cameraCafe_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cameraCafe_Tests.m; sourceTree = "<group>"; };
+		18205DB71AB044F900EE3286 /* DeviceHardwareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHardwareHelper.h; sourceTree = "<group>"; };
+		18205DB81AB044F900EE3286 /* DeviceHardwareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHardwareHelper.m; sourceTree = "<group>"; };
+		18205DBA1AB0536000EE3286 /* SoundHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundHelper.h; sourceTree = "<group>"; };
+		18205DBB1AB0536000EE3286 /* SoundHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundHelper.m; sourceTree = "<group>"; };
+		18205DBE1AB0599600EE3286 /* Ioputarl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ioputarl.wav; sourceTree = "<group>"; };
+		18205DBF1AB0599600EE3286 /* Muelas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Muelas.wav; sourceTree = "<group>"; };
+		18205DC01AB0599600EE3286 /* Norl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Norl.wav; sourceTree = "<group>"; };
+		189E79C41AB096F000BF4AA5 /* Doctor Soos Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Doctor Soos Bold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18205D8B1AB0361F00EE3286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18205DA41AB0361F00EE3286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18205D851AB0361F00EE3286 = {
+			isa = PBXGroup;
+			children = (
+				18205D901AB0361F00EE3286 /* cameraCafé */,
+				18205DAA1AB0361F00EE3286 /* cameraCaféTests */,
+				18205D8F1AB0361F00EE3286 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18205D8F1AB0361F00EE3286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18205D8E1AB0361F00EE3286 /* cameraCafé.app */,
+				18205DA71AB0361F00EE3286 /* cameraCaféTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18205D901AB0361F00EE3286 /* cameraCafé */ = {
+			isa = PBXGroup;
+			children = (
+				189E79C31AB096C300BF4AA5 /* Fonts */,
+				18205DBD1AB0598600EE3286 /* Audios */,
+				18205D951AB0361F00EE3286 /* AppDelegate.h */,
+				18205D961AB0361F00EE3286 /* AppDelegate.m */,
+				18205D981AB0361F00EE3286 /* ViewController.h */,
+				18205D991AB0361F00EE3286 /* ViewController.m */,
+				18205D9B1AB0361F00EE3286 /* Main.storyboard */,
+				18205D9E1AB0361F00EE3286 /* Images.xcassets */,
+				18205DA01AB0361F00EE3286 /* LaunchScreen.xib */,
+				18205D911AB0361F00EE3286 /* Supporting Files */,
+				18205DB71AB044F900EE3286 /* DeviceHardwareHelper.h */,
+				18205DB81AB044F900EE3286 /* DeviceHardwareHelper.m */,
+				18205DBA1AB0536000EE3286 /* SoundHelper.h */,
+				18205DBB1AB0536000EE3286 /* SoundHelper.m */,
+			);
+			path = "cameraCafé";
+			sourceTree = "<group>";
+		};
+		18205D911AB0361F00EE3286 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18205D921AB0361F00EE3286 /* Info.plist */,
+				18205D931AB0361F00EE3286 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18205DAA1AB0361F00EE3286 /* cameraCaféTests */ = {
+			isa = PBXGroup;
+			children = (
+				18205DAD1AB0361F00EE3286 /* cameraCafe_Tests.m */,
+				18205DAB1AB0361F00EE3286 /* Supporting Files */,
+			);
+			path = "cameraCaféTests";
+			sourceTree = "<group>";
+		};
+		18205DAB1AB0361F00EE3286 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18205DAC1AB0361F00EE3286 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18205DBD1AB0598600EE3286 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				18205DBE1AB0599600EE3286 /* Ioputarl.wav */,
+				18205DBF1AB0599600EE3286 /* Muelas.wav */,
+				18205DC01AB0599600EE3286 /* Norl.wav */,
+			);
+			name = Audios;
+			sourceTree = "<group>";
+		};
+		189E79C31AB096C300BF4AA5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				189E79C41AB096F000BF4AA5 /* Doctor Soos Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18205D8D1AB0361F00EE3286 /* cameraCafé */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18205DB11AB0361F00EE3286 /* Build configuration list for PBXNativeTarget "cameraCafé" */;
+			buildPhases = (
+				18205D8A1AB0361F00EE3286 /* Sources */,
+				18205D8B1AB0361F00EE3286 /* Frameworks */,
+				18205D8C1AB0361F00EE3286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cameraCafé";
+			productName = "cameraCafé";
+			productReference = 18205D8E1AB0361F00EE3286 /* cameraCafé.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18205DA61AB0361F00EE3286 /* cameraCaféTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18205DB41AB0361F00EE3286 /* Build configuration list for PBXNativeTarget "cameraCaféTests" */;
+			buildPhases = (
+				18205DA31AB0361F00EE3286 /* Sources */,
+				18205DA41AB0361F00EE3286 /* Frameworks */,
+				18205DA51AB0361F00EE3286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18205DA91AB0361F00EE3286 /* PBXTargetDependency */,
+			);
+			name = "cameraCaféTests";
+			productName = "cameraCaféTests";
+			productReference = 18205DA71AB0361F00EE3286 /* cameraCaféTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18205D861AB0361F00EE3286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Leo Font";
+				TargetAttributes = {
+					18205D8D1AB0361F00EE3286 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					18205DA61AB0361F00EE3286 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 18205D8D1AB0361F00EE3286;
+					};
+				};
+			};
+			buildConfigurationList = 18205D891AB0361F00EE3286 /* Build configuration list for PBXProject "cameraCafé" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18205D851AB0361F00EE3286;
+			productRefGroup = 18205D8F1AB0361F00EE3286 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18205D8D1AB0361F00EE3286 /* cameraCafé */,
+				18205DA61AB0361F00EE3286 /* cameraCaféTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18205D8C1AB0361F00EE3286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189E79C51AB0973300BF4AA5 /* Doctor Soos Bold.ttf in Resources */,
+				18205DC11AB0599600EE3286 /* Ioputarl.wav in Resources */,
+				18205DC31AB0599600EE3286 /* Norl.wav in Resources */,
+				18205D9D1AB0361F00EE3286 /* Main.storyboard in Resources */,
+				18205DA21AB0361F00EE3286 /* LaunchScreen.xib in Resources */,
+				18205DC21AB0599600EE3286 /* Muelas.wav in Resources */,
+				18205D9F1AB0361F00EE3286 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18205DA51AB0361F00EE3286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18205D8A1AB0361F00EE3286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18205D9A1AB0361F00EE3286 /* ViewController.m in Sources */,
+				18205DBC1AB0536000EE3286 /* SoundHelper.m in Sources */,
+				18205D971AB0361F00EE3286 /* AppDelegate.m in Sources */,
+				18205D941AB0361F00EE3286 /* main.m in Sources */,
+				18205DB91AB044F900EE3286 /* DeviceHardwareHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18205DA31AB0361F00EE3286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18205DAE1AB0361F00EE3286 /* cameraCafe_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18205DA91AB0361F00EE3286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18205D8D1AB0361F00EE3286 /* cameraCafé */;
+			targetProxy = 18205DA81AB0361F00EE3286 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18205D9B1AB0361F00EE3286 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18205D9C1AB0361F00EE3286 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18205DA01AB0361F00EE3286 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18205DA11AB0361F00EE3286 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18205DAF1AB0361F00EE3286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18205DB01AB0361F00EE3286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18205DB21AB0361F00EE3286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "cameraCafé/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18205DB31AB0361F00EE3286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "cameraCafé/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18205DB51AB0361F00EE3286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cameraCaféTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cameraCafé.app/cameraCafé";
+			};
+			name = Debug;
+		};
+		18205DB61AB0361F00EE3286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cameraCaféTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cameraCafé.app/cameraCafé";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18205D891AB0361F00EE3286 /* Build configuration list for PBXProject "cameraCafé" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18205DAF1AB0361F00EE3286 /* Debug */,
+				18205DB01AB0361F00EE3286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18205DB11AB0361F00EE3286 /* Build configuration list for PBXNativeTarget "cameraCafé" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18205DB21AB0361F00EE3286 /* Debug */,
+				18205DB31AB0361F00EE3286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18205DB41AB0361F00EE3286 /* Build configuration list for PBXNativeTarget "cameraCaféTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18205DB51AB0361F00EE3286 /* Debug */,
+				18205DB61AB0361F00EE3286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18205D861AB0361F00EE3286 /* Project object */;
+}
