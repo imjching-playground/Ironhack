@@ -8,9 +8,11 @@
 //  Copyright (c) 2013 Scott Sherwood. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WeatherHTTPClient.h"
 
-@interface WTTableViewController : UITableViewController
+@interface WTTableViewController : UITableViewController <NSXMLParserDelegate, CLLocationManagerDelegate, UIActionSheetDelegate, WeatherHTTPClientDelegate>
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
 
 // Actions
 - (IBAction)clear:(id)sender;
