@@ -24,7 +24,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="black" destination="hug-fg-kkx" id="5M4-hs-NCm"/>
+                        <outlet property="black" destination="hug-fg-kkx" id="q7U-o6-9i2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ct4-sq-W4k" sceneMemberID="firstResponder"/>
